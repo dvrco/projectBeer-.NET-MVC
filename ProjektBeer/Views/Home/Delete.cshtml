@@ -1,0 +1,81 @@
+﻿@model ProjektBeer.DB.Beer
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+
+
+        <h2>Delete</h2>
+
+        <h3>Are you sure you want to delete this?</h3>
+        <div>
+            <hr />
+            <h4>Beer</h4>
+            <hr />
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.IdBeer)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.IdBeer)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Title)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Title)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Style)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Style)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.BeerDes)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.BeerDes)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Price)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Price)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.ImagePath)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.ImagePath)
+                </dd>
+
+            </dl>
+
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="form-actions no-color">
+                    <input type="submit" value="Delete" class="btn btn-default" /> |
+                    @Html.ActionLink("Back to List", "Index")
+                </div>
+            }
+        </div>
+    </div>
+</div>

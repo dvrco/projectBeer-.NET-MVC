@@ -1,0 +1,111 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/style.css" rel="stylesheet" />
+    <link href="~/Content/product.css" rel="stylesheet" />
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <script src="~/Scripts/knockout.mapping-latest.js"></script>
+    <script src="~/Scripts/knockout-2.0.0.js"></script>
+    <script src="~/Scripts/typedHero.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+
+
+    <div class="fullSizeBackground">
+        <div class="bacgroundContent">
+
+
+            <nav class="navbar navbar-default" role="navigation">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav">
+
+                        <li><a href="#">@Html.ActionLink("HOME", "Index")</a></li>
+                        <li><a href="#">@Html.ActionLink("BEERS", "Beers")</a></li>
+                        <li><a href="#">@Html.ActionLink("NEWS", "News")</a></li>
+                        <li><a href="#">@Html.ActionLink("CREATE NEW BEER", "Create")</a></li>
+                        <li><a href="#">@Html.ActionLink("THE BRAND", "Brand")</a></li>
+
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </nav>
+
+            <div class="hr-content" style=" margin-top 10%; margin-bottom 10%;">
+
+
+                <div class="fullName">
+                    <h4>HELLO WE'RE</h4>
+                    <hr />
+                    <h2>LVX BEER</h2>
+                </div>
+                <div class="prgDesc">
+                    <div id="typed-strings">
+
+                        <p><em>Craft Brewer</em> <b>with</b> <em>Good Vibes</em> </p>
+                        <p>Just drik it!</p>
+                    </div>
+                    <span id="typed"></span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    @RenderBody();
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="~/Scripts/typedHero.js"></script>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/typed.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</body>
+
+<footer class="footer-2 bg-midnight-blue">
+    <div class="text-center">
+        <nav>
+            <ul>
+                <a href="#">Home</a>
+                <a href="#">Company</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact</a>
+            </ul>
+        </nav>
+        <div class="social-btns pull-right">
+            <a href="#"><div class="fui-vimeo"> </div><div class="fui-vimeo"> </div></a>
+            <a href="#"><div class="fui-facebook"> </div><div class="fui-facebook"> </div></a>
+            <a href="#"><div class="fui-twitter"> </div><div class="fui-twitter"> </div></a>
+        </div>
+        <div class="additional-links">
+            Be sure to take a look to our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>
+        </div>
+    </div>
+</footer>
+
+</html>

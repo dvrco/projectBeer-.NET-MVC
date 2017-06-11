@@ -1,0 +1,97 @@
+﻿@model ProjektBeer.DB.Beer
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Home - LVX BEER";
+}
+
+
+
+
+    <!--AboutUs-->
+    
+    <div class="AboutUs" style="text-align:center;">
+        <div class="container">
+            <div class="row">
+                <h2>About Us</h2>
+                <p>I am extremely pleased to see you visit my kingdom of superb hop flavours and aromas. Are you aware of the fact that I have travelled more than 120,000 km to create unique formulae? I am a discoverer, an eternal traveller, I roam the world searching for flavours I would like to present in new settings. I call it the love for that which is yet undiscovered, I track down and explore, search and verify.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!--our products-->
+
+    <div class="container">
+   
+            <div class="row">
+                
+                <div class="col-6 col-md-4">
+                    <div class="app">               
+                        <div class="screen">
+                           
+                            <div class="img">
+                                <img src="@Url.Content("~/Content/img/4a12b789e4288452fc9e916980400b63194e9491_201410061115-300x0-t171736307.jpg")" alt="product" />
+                            </div>
+                            <div class="desc">
+                                <p><b>PINTA Atak Chmielu 15,1°</b> to fantazyjnie nachmielone piwo w stylu American India Pale Ale.  </p>
+                            </div>
+                           
+                            <div class="actions">
+                                <button><a href="~/Home/Details/6">READ MORE</a></button>
+                                <div class="price">
+                                    <p><span>FREE SHIPPING</span>10.00 PLN</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4">
+                    <div class="app">
+                        <div class="screen">
+
+                            <div class="img">
+                                <img src="@Url.Content("~/Content/img/pinta-kwas-epsilon-butelka_201604130856-300x0-t173308451.jpg")" alt="product" width="400" height="300" />
+                            </div>
+                            <div class="desc">
+                                <p><b>PINTA Kwas Epsilon</b> jasne, treściwe piwo górnej fermentacji, zakwaszane blendem 3 szczepów  </p>
+                            </div>
+
+                            <div class="actions">
+                                <button><a href="~/Home/Details/10">READ MORE</a></button>
+                                <div class="price">
+                                    <p><span>FREE SHIPPING</span>12.00 PLN</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4">
+                    <div class="app">
+                        <div class="screen">
+
+                            <div class="img">
+                                <img src="@Url.Content("~/Content/img/pinta-imperator-baltycki-bottle_201612212210-300x0-t174319719.jpg")" alt="product" width="100" height="300"/>
+                            </div>
+                            <div class="desc">
+                                <p><b>PINTA Imperator Bałtycki</b> ciemny, mocny lager to piwowarski skarb Polski. W klasycznej wersji   </p>
+                            </div>
+
+                            <div class="actions">
+                                <button><a href="~/Home/Details/11">READ MORE</a></button>
+                                <div class="price">
+                                    <p><span>FREE SHIPPING</span>16.00 PLN</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+               
+            </div>
+        
+    </div>
+
+
