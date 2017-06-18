@@ -46,11 +46,8 @@ namespace ProjektBeer.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(Beer imageModel)
+        public ActionResult Create(Beer imageModel, Beer beer)
         {
-{
-
-
                 string fileName = Path.GetFileNameWithoutExtension(imageModel.ImageFile.FileName);
                 string extension = Path.GetExtension(imageModel.ImageFile.FileName);
                 fileName = fileName + DateTime.Now.ToString("yymmssfff") + extension;
@@ -58,15 +55,15 @@ namespace ProjektBeer.Controllers
                 fileName = Path.Combine(Server.MapPath("~/Content/img"), fileName);
                 imageModel.ImageFile.SaveAs(fileName);
 
-                if (ModelState.IsValid)
+                if (ModelState.IsValid) {
 
-
+                    db.Beers.Add(beer);
                     db.Beers.Add(imageModel);
                     db.SaveChanges();
 
             }
-            ModelState.Clear();
-                return View();
+
+            return View(beer);
 
         }
 

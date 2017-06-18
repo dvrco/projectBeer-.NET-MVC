@@ -429,7 +429,9 @@ img {
     padding-top: 20px;
 }
 .bg-midnight-blue {
-    background-color: #2C3E50;
+        background-color: #ccaf61!important;
+    color: #ffffff!important;
+}
 }
 footer {
     -moz-box-sizing: border-box;
